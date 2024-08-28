@@ -121,24 +121,110 @@ multi line comments
 
 //Array of Objects
 
-const todos = [
-    {
-        id: 1,
-        text: 'Learn SDLC',
-        isCompleted: true
-    },
-    {
-        id: 2,
-        text: 'Learn HTML&CSS',
-        isCompleted: true
-    },
-    {
-        id: 3,
-        text: 'Learn JS',
-        isCompleted: false
-    }
-];
+// const todos = [
+//     {
+//         id: 1,
+//         text: 'Learn SDLC',
+//         isCompleted: true
+//     },
+//     {
+//         id: 2,
+//         text: 'Learn HTML&CSS',
+//         isCompleted: true
+//     },
+//     {
+//         id: 3,
+//         text: 'Learn JS',
+//         isCompleted: false
+//     }
+// ];
 
-console.log(todos[2].text);
-const todoJSON=JSON.stringify(todos);
-console.log(todoJSON);
+// console.log(todos[2].text);
+// const todoJSON=JSON.stringify(todos);
+// console.log(todoJSON);
+
+// //Loops
+
+// // for(let i=0; i<10; i++){
+// //     console.log(`For index: ${i}`);
+// // }
+
+// // for(let i=0; i < todos.length; i++){
+// //     console.log(`Todos: ${i} is ${todos[i].text}`);
+// // }
+
+// for(let todo of todos){
+//     console.log(todo.text);
+// }
+
+// todos.forEach(function(todo){
+//     console.log(todo.text);
+// });
+
+//Conditions
+
+// let x= '5';
+
+// if(x == 5){
+//     console.log(typeof x);
+//     console.log('x is 5');
+// }
+
+// let x= 5;
+
+// if(x === 5){
+//     console.log(typeof x);
+//     console.log('x is 5');
+// }else if( x > 10){
+//     console.log('x is greater than 10');
+// }else{
+//     console.log('x is less than 10');
+// }
+
+// const x = 3;
+// const y = 9;
+
+// if (x > 5 || y > 10) {
+//     console.log('x is more than 5 or y is more than 10');
+// }
+
+// if (x > 5 && y > 10) {
+//     console.log('x is more than 5 and y is more than 10');
+// }
+
+// //Ternary Operator
+// const z = 11;
+// let color = z > 10 ? 'red' : 'blue';
+// console.log(color);
+// //color ='black';
+// switch (color) {
+//     case 'red':
+//         console.log('Color is Red');
+//         break;
+
+//     case 'blue':
+//         console.log('Color is Blue');
+//         break;
+
+//     case 'green':
+//             console.log('Color is Green');
+//             break;
+//     default:
+//         console.log('Color is not Red or blue');
+//         break;
+// }
+
+// Functions
+//eventlistenfor buttonclick
+
+// prompt('text', 'text');
+// confirm('Are you sure?');
+
+document.getElementById("myBtn").addEventListener("click", myfunction);
+
+//Closure
+function myfunction(){
+       let name= 'Suresh' + Date();
+
+        document.getElementById('p1').innerHTML=name;
+    }
